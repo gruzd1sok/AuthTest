@@ -1,0 +1,29 @@
+disabled_rules:
+  - colon
+  - comma
+  - control_statement
+  - trailing_whitespace
+  - line_length
+  
+opt_in_rules:
+  - empty_count
+  - missing_docs
+  
+excluded:
+  - Carthage
+  - Pods
+  - Source/ExcludedFolder
+  - Source/ExcludedFile.swift
+  
+included:
+  - MyProject
+  - MyProjectKeyboard
+  - MyProjectTests
+  
+file_length:
+  warning: 500
+  error: 600
+
+reporter: xcode
+
+warning_threshold: 15

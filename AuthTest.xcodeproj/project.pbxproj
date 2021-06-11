@@ -13,6 +13,14 @@
 		00462319267234DF006DDB84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00462318267234DF006DDB84 /* Preview Assets.xcassets */; };
 		00462324267234DF006DDB84 /* AuthTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00462323267234DF006DDB84 /* AuthTestTests.swift */; };
 		0046232F267234DF006DDB84 /* AuthTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0046232E267234DF006DDB84 /* AuthTestUITests.swift */; };
+		0046233D26726D8A006DDB84 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0046233C26726D8A006DDB84 /* AuthView.swift */; };
+		0046234126727708006DDB84 /* Merriweather-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0046234326727708006DDB84 /* Merriweather-Light.ttf */; };
+		0046234626727843006DDB84 /* LogoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0046234526727843006DDB84 /* LogoutView.swift */; };
+		008EDC9D26731F8500794CCE /* KeyboardHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008EDC9C26731F8500794CCE /* KeyboardHandler.swift */; };
+		008EDCA52673422600794CCE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008EDCA42673422600794CCE /* NetworkService.swift */; };
+		008EDCA72673428800794CCE /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008EDCA62673428800794CCE /* LoginViewModel.swift */; };
+		009C9A62267319C000F0BCBB /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 009C9A61267319C000F0BCBB /* .swiftlint.yml */; };
+		00FD94882673130C0099AE5D /* Merriweather-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 00FD9487267313060099AE5D /* Merriweather-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,15 @@
 		0046232A267234DF006DDB84 /* AuthTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0046232E267234DF006DDB84 /* AuthTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTestUITests.swift; sourceTree = "<group>"; };
 		00462330267234DF006DDB84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0046233C26726D8A006DDB84 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		0046234226727708006DDB84 /* en */ = {isa = PBXFileReference; lastKnownFileType = file; name = en; path = "en.lproj/Merriweather-Light.ttf"; sourceTree = "<group>"; };
+		004623442672770A006DDB84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = "Base.lproj/Merriweather-Light.ttf"; sourceTree = "<group>"; };
+		0046234526727843006DDB84 /* LogoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutView.swift; sourceTree = "<group>"; };
+		008EDC9C26731F8500794CCE /* KeyboardHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardHandler.swift; sourceTree = "<group>"; };
+		008EDCA42673422600794CCE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		008EDCA62673428800794CCE /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		009C9A61267319C000F0BCBB /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		00FD9487267313060099AE5D /* Merriweather-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +112,15 @@
 		00462310267234DE006DDB84 /* AuthTest */ = {
 			isa = PBXGroup;
 			children = (
+				008EDCA32673366400794CCE /* Presenters */,
+				008EDCA02673363500794CCE /* Models */,
+				008EDC9F267335D600794CCE /* Routers */,
+				008EDC9E267335AF00794CCE /* Views */,
 				00462311267234DE006DDB84 /* AuthTestApp.swift */,
-				00462313267234DE006DDB84 /* ContentView.swift */,
 				00462315267234DF006DDB84 /* Assets.xcassets */,
 				0046231A267234DF006DDB84 /* Info.plist */,
+				009C9A61267319C000F0BCBB /* .swiftlint.yml */,
+				0046233E267276C6006DDB84 /* Resources */,
 				00462317267234DF006DDB84 /* Preview Content */,
 			);
 			path = AuthTest;
@@ -130,6 +152,49 @@
 			path = AuthTestUITests;
 			sourceTree = "<group>";
 		};
+		0046233E267276C6006DDB84 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				00FD9487267313060099AE5D /* Merriweather-Bold.ttf */,
+				0046234326727708006DDB84 /* Merriweather-Light.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		008EDC9E267335AF00794CCE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0046234526727843006DDB84 /* LogoutView.swift */,
+				0046233C26726D8A006DDB84 /* AuthView.swift */,
+				00462313267234DE006DDB84 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		008EDC9F267335D600794CCE /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				008EDC9C26731F8500794CCE /* KeyboardHandler.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		008EDCA02673363500794CCE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				008EDCA62673428800794CCE /* LoginViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		008EDCA32673366400794CCE /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				008EDCA42673422600794CCE /* NetworkService.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +205,7 @@
 				0046230A267234DE006DDB84 /* Sources */,
 				0046230B267234DE006DDB84 /* Frameworks */,
 				0046230C267234DE006DDB84 /* Resources */,
+				00FD9489267317150099AE5D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -233,7 +299,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				009C9A62267319C000F0BCBB /* .swiftlint.yml in Resources */,
+				0046234126727708006DDB84 /* Merriweather-Light.ttf in Resources */,
 				00462319267234DF006DDB84 /* Preview Assets.xcassets in Resources */,
+				00FD94882673130C0099AE5D /* Merriweather-Bold.ttf in Resources */,
 				00462316267234DF006DDB84 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,13 +323,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00FD9489267317150099AE5D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n  exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0046230A267234DE006DDB84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				008EDC9D26731F8500794CCE /* KeyboardHandler.swift in Sources */,
+				0046234626727843006DDB84 /* LogoutView.swift in Sources */,
+				008EDCA52673422600794CCE /* NetworkService.swift in Sources */,
 				00462314267234DE006DDB84 /* ContentView.swift in Sources */,
 				00462312267234DE006DDB84 /* AuthTestApp.swift in Sources */,
+				0046233D26726D8A006DDB84 /* AuthView.swift in Sources */,
+				008EDCA72673428800794CCE /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +388,18 @@
 			targetProxy = 0046232B267234DF006DDB84 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0046234326727708006DDB84 /* Merriweather-Light.ttf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0046234226727708006DDB84 /* en */,
+				004623442672770A006DDB84 /* Base */,
+			);
+			name = "Merriweather-Light.ttf";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		00462331267234DF006DDB84 /* Debug */ = {
