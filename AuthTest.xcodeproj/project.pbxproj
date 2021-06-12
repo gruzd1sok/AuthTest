@@ -112,10 +112,10 @@
 		00462310267234DE006DDB84 /* AuthTest */ = {
 			isa = PBXGroup;
 			children = (
-				008EDCA32673366400794CCE /* Presenters */,
-				008EDCA02673363500794CCE /* Models */,
-				008EDC9F267335D600794CCE /* Routers */,
-				008EDC9E267335AF00794CCE /* Views */,
+				008EDCAA2674805600794CCE /* Views */,
+				008EDCA62673428800794CCE /* LoginViewModel.swift */,
+				008EDCA42673422600794CCE /* NetworkService.swift */,
+				008EDC9C26731F8500794CCE /* KeyboardHandler.swift */,
 				00462311267234DE006DDB84 /* AuthTestApp.swift */,
 				00462315267234DF006DDB84 /* Assets.xcassets */,
 				0046231A267234DF006DDB84 /* Info.plist */,
@@ -161,7 +161,7 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		008EDC9E267335AF00794CCE /* Views */ = {
+		008EDCAA2674805600794CCE /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				0046234526727843006DDB84 /* LogoutView.swift */,
@@ -169,30 +169,6 @@
 				00462313267234DE006DDB84 /* ContentView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		008EDC9F267335D600794CCE /* Routers */ = {
-			isa = PBXGroup;
-			children = (
-				008EDC9C26731F8500794CCE /* KeyboardHandler.swift */,
-			);
-			path = Routers;
-			sourceTree = "<group>";
-		};
-		008EDCA02673363500794CCE /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				008EDCA62673428800794CCE /* LoginViewModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		008EDCA32673366400794CCE /* Presenters */ = {
-			isa = PBXGroup;
-			children = (
-				008EDCA42673422600794CCE /* NetworkService.swift */,
-			);
-			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

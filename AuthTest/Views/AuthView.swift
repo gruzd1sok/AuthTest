@@ -79,6 +79,7 @@ struct AuthView: View {
             }
             .foregroundColor(Color(#colorLiteral(red: 0.5098039216, green: 0.5098039216, blue: 0.5098039216, alpha: 1)))
             .disableAutocorrection(true)
+//            to up textfields
             .padding(.bottom, keyboardHandler.keyboardHeight - 55)
             .animation(.default)
             
